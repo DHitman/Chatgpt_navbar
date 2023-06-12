@@ -15,30 +15,31 @@
         
         <div class="navlink">
             <a href="" class="logo"> <img src="cdnlogo.com_ChatGPT.png" height="25px"  width="25px" alt=""> <span> OpenAI</span></a>
-            <select name="" id="">
-                <option value="" >Research</option>
-                <option value="">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Research <i class="bi bi-chevron-down"></i></button>
+                <div class="dropdown-content" id="researchDropdown">
                     <a href="">Overview</a>
-                   
-                </option>
-                <option value="">
                     <a href="">Index</a>
-                </option>
-            </select>
-          
+                </div>
+            </div>
             <a href="">Product</a>
             <a href="">Developers</a>
             <a href="">Safety</a>
             <a href="">Company</a>
         </div>
         <div class="navbtn">
-              <a href="">Search</a>
-              <a href="">Log in <i class="bi bi-arrow-up-right"></i></a>
-              <a href="" class="btn">Sign up <i class="bi bi-arrow-up-right"></i></a>
-
+            <a href="">Search</a>
+            <a href="">Log in <i class="bi bi-arrow-up-right"></i></a>
+            <a href="" class="btn">Sign up <i class="bi bi-arrow-up-right"></i></a>
         </div>
     </div>
 
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("researchDropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 
 </html>
